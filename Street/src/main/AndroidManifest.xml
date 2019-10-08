@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.belaku.naveenprakash.streetMap">
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/street_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/street_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDypKvRVtn8t_F0yKtSfK5PuI54FBNDvCk" />
+        <activity
+            android:name="com.belaku.naveenprakash.streetMap.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.belaku.naveenprakash.streetMap.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name="com.belaku.naveenprakash.streetMap.MainActivity$MyService" />
+
+        <activity
+            android:name="com.belaku.naveenprakash.streetMap.TutorialActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.belaku.naveenprakash.streetMap.NavigationActivity"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

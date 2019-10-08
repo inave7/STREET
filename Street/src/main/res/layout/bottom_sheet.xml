@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="5dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <!--<ImageButton
+        android:id="@+id/imgbtn1_3_schoolcolleges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:background="@android:color/transparent"
+        android:src="@drawable/marker_schoolcolleges" />
+    <TextView
+        android:id="@+id/tx_edu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgbtn1_3_schoolcolleges"
+        android:text="Edu"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+    <ImageButton
+        android:id="@+id/imgbtn1_2_atm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_toRightOf="@+id/imgbtn1_3_schoolcolleges"
+        android:background="@android:color/transparent"
+        android:src="@drawable/marker_atm" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbtn1_3_schoolcolleges"
+        android:layout_alignLeft="@+id/imgbtn1_2_atm"
+        android:text="ATM"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtn1_4_temple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_toLeftOf="@+id/imgbtn1_3_schoolcolleges"
+        android:background="@android:color/transparent"
+        android:src="@drawable/marker_temple" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbtn1_3_schoolcolleges"
+        android:layout_alignEnd="@+id/imgbtn1_4_temple"
+        android:text="Temple"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtn1_1_hospitals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_toRightOf="@+id/imgbtn1_2_atm"
+        android:background="@android:color/transparent"
+        android:src="@drawable/marker_hospital" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbtn1_3_schoolcolleges"
+        android:layout_alignLeft="@+id/imgbtn1_1_hospitals"
+        android:text="Health"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtn1_5_taxicabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_toLeftOf="@+id/imgbtn1_4_temple"
+        android:background="@android:color/transparent"
+        android:src="@drawable/marker_taxi" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbtn1_3_schoolcolleges"
+        android:layout_alignLeft="@+id/imgbtn1_5_taxicabs"
+        android:text="Taxi"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtn2_3_theaters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_edu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:background="@android:color/transparent"
+        android:src="@drawable/marker_theater" />
+    <TextView
+        android:id="@+id/tx_theater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_alignLeft="@+id/imgbtn2_3_theaters"
+        android:text="Movie"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtn2_2_dining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_edu"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_toRightOf="@+id/imgbtn2_3_theaters"
+        android:background="@android:color/transparent"
+        android:src="@drawable/marker_hotels" />
+    <TextView
+        android:id="@+id/tx_dining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_alignLeft="@+id/imgbtn2_2_dining"
+        android:text="Dining"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtn2_4_pubsbars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_edu"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_toLeftOf="@+id/imgbtn2_3_theaters"
+        android:background="@android:color/transparent"
+        android:src="@drawable/marker_pubsbar" />
+    <TextView
+        android:id="@+id/tx_pubsbars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_alignLeft="@+id/imgbtn2_4_pubsbars"
+        android:text="Pubs"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtn2_1_railways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_edu"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_toRightOf="@+id/imgbtn2_2_dining"
+        android:background="@android:color/transparent"
+        android:src="@drawable/marker_trainstation" />
+    <TextView
+        android:id="@+id/tx_railways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imgbtn2_1_railways"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:text="Trains"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtn2_5_airport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_edu"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_toLeftOf="@+id/imgbtn2_4_pubsbars"
+        android:background="@android:color/transparent"
+        android:src="@drawable/marker_airport" />
+    <TextView
+        android:id="@+id/tx_airport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imgbtn2_5_airport"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:text="Airport"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+-->
+
+    <GridView
+        android:id="@+id/gridview"
+        android:numColumns="5"
+        android:verticalSpacing="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
